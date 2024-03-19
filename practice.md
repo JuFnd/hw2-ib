@@ -14,4 +14,14 @@
 
 ### Задание 2: Википедия
 
-Возможно обойти регулярное выражение 
+Возможно обойти регулярное выражение путём подстановки url'a перед https://en.wikipedia.org. 
+Например 
+```
+https://example.com/https://en.wikipedia.org
+```
+такая строка подходит под регулярное выражение.
+```
+Pattern.compile("https\\:\\/\\/en\\.wikipedia\\.org").matcher(url).find()
+```
+
+![изображение](https://github.com/JuFnd/hw2-ib/assets/109366718/71e7460c-0258-4f9d-acaa-9ce2063cd62c)
